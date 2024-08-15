@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
-import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -26,7 +25,6 @@ import { HomeComponent } from './components/home/home.component';
     AppComponent,
     HeaderComponent,
     SobreMiComponent,
-    ProjectsComponent,
     ContactComponent,
     FooterComponent,
     BtnSubirComponent,

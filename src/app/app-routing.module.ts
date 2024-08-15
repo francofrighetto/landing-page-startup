@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  { path: 'ver-mas', component: VerMasComponent },
+  { path: 'ver-mas/:proyecto', component: VerMasComponent },
   { path: 'home', component: HomeComponent },
   { path: '**', redirectTo: '/home' },
 ];

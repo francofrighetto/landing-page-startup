@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-ver-mas',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ver-mas.component.css']
 })
 export class VerMasComponent implements OnInit {
-
-  constructor() { }
+proyecto:string | null= null;
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      this.proyecto = params.get('proyecto');
+    });
   }
 
 }
