@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+#aboutme {
+    /* background-color: rgb(235, 235, 235); */
+}
+
+.info p {
+    font-size: large;
+}
