@@ -3,305 +3,51 @@
   margin: 0;
 }
 
-.card{
-    margin-top: 20px;
-    margin-right: 5px;
+.card {
+  margin-top: 20px;
+  margin-right: 5px;
 }
 
-
-
-
-
-body,
-html {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    padding: 0;
-    color: var(--black);
-    width: 100%;
-}
-
-:root {
-    --purple: rgb(84, 37, 179);
-    --blue: rgb(17, 37, 218);
-    --black: rgb(37, 37, 37);
-}
-
-body,
-html {
-    color: #252525;
-    color: var(--black);
-    font-family: Poppins, sans-serif;
-    margin: 0;
-    padding: 0;
-    width: 100%
-}
-
-:root {
-    --purple: #5425b3;
-    --blue: #1125da;
-    --black: #252525
-}
-
-
-.Proyects-container {
-    align-items: center;
-    background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6.5rem 21rem
-}
-
-.Proyects-title {
-    margin: 0 0 3rem
-}
-
-.Proyects-title h2 {
-    border-bottom: 3px solid var(--purple);
-    color: var(--purple);
-    font-size: 1.7rem;
-    margin: 0;
-    padding: 0 0 .3rem
-}
-
-.Proyects-card-container {
-    grid-gap: 3rem;
-    box-sizing: border-box;
-    display: grid;
-    gap: 3rem;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: minmax(0, 1fr)
-}
-
-.proyect-container {
-    display: flex;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    justify-content: space-between;
-    padding: 2rem
-}
-
-.proyect-1,
-.proyect-2,
-.proyect-3,
-.proyect-4,
-.proyect-5 {
-    background-color: #fff;
-    border-radius: 2rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1)
-}
-
-.proyect-skills {
-    display: flex;
-    justify-content: space-around;
-    width: 100%
-}
-
-.left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40%
-}
-
-.top {
-    text-align: center
-}
-
-.top p {
-    font-weight: 500
-}
-
-.proyect-title {
-    font-size: 1.7rem;
-    margin: 0 0 1rem
-}
-
-.proyect-description {
-    margin: 0
-}
-
-.bottom {
-    display: flex;
-    flex-direction: column
-}
-
-.bottom>h3 {
-    margin: 0 0 1rem;
-    text-align: center
-}
-
-.right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between
-}
-
-.img-proyect-1,
-.img-proyect-2,
-.img-proyect-3,
-.img-proyect-4,
-.img-proyect-5 {
-    border-radius: 1rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
-    height: 15rem;
-    transition: -webkit-transform .3s ease;
-    transition: transform .3s ease;
-    transition: transform .3s ease, -webkit-transform .3s ease;
-    width: 25rem
-}
-
-.img-proyect-1:hover,
-.img-proyect-2:hover,
-.img-proyect-3:hover,
-.img-proyect-4:hover,
-.img-proyect-5:hover {
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01)
-}
-
-.img-proyect-1 {
-    background: url(./../../../assets/images/marykay.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover
-}
-
-.img-proyect-2 {
-    background: url(./../../../assets/images/ballesteros.png);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover
-}
-
-.proyect-links {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-}
-
-.proyect-links a {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem 1rem 0;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.bx-globe {
-    color: var(--black);
-    transition: color .1s ease
-}
-
-.bx-globe:hover {
-    color: var(--purple)
-}
-
-@media only screen and (max-width: 1453px) {
-    .Proyects-container {
-        padding: 6.5rem 11rem
-    }
-}
-
-@media only screen and (max-width: 1139px) {
-    .Proyects-container {
-        padding: 6.5rem 4.5rem
-    }
-    .proyect-container {
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-between
-    }
-    .proyect-2,
-    .proyect-4 {
-        flex-direction: column-reverse
-    }
-    .left {
-        padding-bottom: 2rem;
-        width: 100%
-    }
-    .proyect-description {
-        margin-bottom: 2rem
-    }
-    .bottom {
-        align-items: center;
-        justify-content: center
-    }
-    .bottom h3 {
-        margin-bottom: .5rem
-    }
-    .proyect-skills {
-        width: 60%
-    }
-}
-
-@media only screen and (max-width: 710px) {
-    .Proyects-container {
-        padding: 6.5rem 1.5rem
-    }
-    .top {
-        display: flex;
-        flex-direction: column;
-        width: 100%
-    }
-    .proyect-title {
-        font-size: 1.3rem
-    }
-    .bottom h3,
-    .proyect-description {
-        font-size: .8rem
-    }
-    .left {
-        justify-content: flex-start
-    }
-    .right {
-        align-items: center;
-        justify-content: center;
-        width: 100%
-    }
-    .img-proyect-1,
-    .img-proyect-2,
-    .img-proyect-3,
-    .img-proyect-4,
-    .img-proyect-5 {
-        height: 12rem;
-        width: 20rem
-    }
-}
-
-@media only screen and (max-width: 523px) {
-    .Proyects-title h2 {
-        font-size: 1.3rem
-    }
-    .proyect-skills {
-        width: 100%
-    }
-}
-
-@media only screen and (max-width: 438px) {
-    .img-link,
-    .img-proyect-1,
-    .img-proyect-2,
-    .img-proyect-3,
-    .img-proyect-4,
-    .img-proyect-5 {
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 9rem;
-        width: 100%
-    }
-}
-
-
-.intro{
+.contacto {
+  background-color: #2a4768;
   color: white;
-    font-family: 'Inter', sans-serif;
-    --font-sans-serif: 'Inter';
+  padding: 25px;
+}
 
+.intro {
+  color: white;
+  padding: 25px;
+}
+
+.card-feature {
+  display: flex;
+  max-width: 300px;
+  min-height: 100px;
+  border-radius: 10px;
+  background-color: white;
+  transition: 0.5s;
+  margin: 3em 2em;
+}
+
+.card-feature-text {
+  padding: 10px;
+  justify-content: flex-start;
+}
+.card-feature h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-feature p {
+  font-size: 14px;
+  font-weight: regular;
+}
+
+.card-feature-icon {
+  text-align: center;
+  margin: 30px;
+}
+
+.card-feature i {
+  font-size: 2.5em;
 }
